@@ -1,0 +1,241 @@
+2024-10-07 23:42:54,675:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:42:54,675:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:43:09,793:INFO:127.0.0.1 - - [07/Oct/2024 23:43:09] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:43:09,861:INFO:127.0.0.1 - - [07/Oct/2024 23:43:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:13,077:INFO:127.0.0.1 - - [07/Oct/2024 23:43:13] "GET / HTTP/1.1" 200 -
+2024-10-07 23:43:13,100:INFO:127.0.0.1 - - [07/Oct/2024 23:43:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:13,101:INFO:127.0.0.1 - - [07/Oct/2024 23:43:13] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:14,475:INFO:127.0.0.1 - - [07/Oct/2024 23:43:14] "GET / HTTP/1.1" 200 -
+2024-10-07 23:43:14,490:INFO:127.0.0.1 - - [07/Oct/2024 23:43:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:14,491:INFO:127.0.0.1 - - [07/Oct/2024 23:43:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:15,641:INFO:127.0.0.1 - - [07/Oct/2024 23:43:15] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:15,649:INFO:127.0.0.1 - - [07/Oct/2024 23:43:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:15,650:INFO:127.0.0.1 - - [07/Oct/2024 23:43:15] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:41,341:INFO:127.0.0.1 - - [07/Oct/2024 23:43:41] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:41,356:INFO:127.0.0.1 - - [07/Oct/2024 23:43:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:41,357:INFO:127.0.0.1 - - [07/Oct/2024 23:43:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:42,002:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:42,019:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:42,020:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:42,268:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:42,282:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:42,284:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:42,564:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:42,578:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:42,579:INFO:127.0.0.1 - - [07/Oct/2024 23:43:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:47,666:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:43:47,666:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:43:51,563:INFO:127.0.0.1 - - [07/Oct/2024 23:43:51] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:51,662:INFO:127.0.0.1 - - [07/Oct/2024 23:43:51] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:51,662:INFO:127.0.0.1 - - [07/Oct/2024 23:43:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:53,655:INFO:127.0.0.1 - - [07/Oct/2024 23:43:53] "GET / HTTP/1.1" 200 -
+2024-10-07 23:43:53,666:INFO:127.0.0.1 - - [07/Oct/2024 23:43:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:53,667:INFO:127.0.0.1 - - [07/Oct/2024 23:43:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:54,782:INFO:127.0.0.1 - - [07/Oct/2024 23:43:54] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:43:54,796:INFO:127.0.0.1 - - [07/Oct/2024 23:43:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:43:54,797:INFO:127.0.0.1 - - [07/Oct/2024 23:43:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:43:56,572:INFO:127.0.0.1 - - [07/Oct/2024 23:43:56] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:43:56,587:INFO:127.0.0.1 - - [07/Oct/2024 23:43:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:46:54,730:INFO:127.0.0.1 - - [07/Oct/2024 23:46:54] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:46:54,742:INFO:127.0.0.1 - - [07/Oct/2024 23:46:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:46:55,490:INFO:127.0.0.1 - - [07/Oct/2024 23:46:55] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:46:55,503:INFO:127.0.0.1 - - [07/Oct/2024 23:46:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:46:55,899:INFO:127.0.0.1 - - [07/Oct/2024 23:46:55] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:46:55,912:INFO:127.0.0.1 - - [07/Oct/2024 23:46:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:47:18,966:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:47:18,966:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:47:51,724:INFO:127.0.0.1 - - [07/Oct/2024 23:47:51] "GET / HTTP/1.1" 200 -
+2024-10-07 23:47:51,839:INFO:127.0.0.1 - - [07/Oct/2024 23:47:51] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-10-07 23:47:51,840:INFO:127.0.0.1 - - [07/Oct/2024 23:47:51] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-10-07 23:47:51,860:INFO:127.0.0.1 - - [07/Oct/2024 23:47:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-07 23:47:53,288:INFO:127.0.0.1 - - [07/Oct/2024 23:47:53] "GET / HTTP/1.1" 200 -
+2024-10-07 23:47:53,308:INFO:127.0.0.1 - - [07/Oct/2024 23:47:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:47:53,309:INFO:127.0.0.1 - - [07/Oct/2024 23:47:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:47:54,137:INFO:127.0.0.1 - - [07/Oct/2024 23:47:54] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:47:54,152:INFO:127.0.0.1 - - [07/Oct/2024 23:47:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:47:54,153:INFO:127.0.0.1 - - [07/Oct/2024 23:47:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:47:54,874:INFO:127.0.0.1 - - [07/Oct/2024 23:47:54] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:47:54,895:INFO:127.0.0.1 - - [07/Oct/2024 23:47:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:27,732:INFO:127.0.0.1 - - [07/Oct/2024 23:49:27] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:49:27,753:INFO:127.0.0.1 - - [07/Oct/2024 23:49:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:27,756:INFO:127.0.0.1 - - [07/Oct/2024 23:49:27] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:49:28,452:INFO:127.0.0.1 - - [07/Oct/2024 23:49:28] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:49:28,469:INFO:127.0.0.1 - - [07/Oct/2024 23:49:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:28,470:INFO:127.0.0.1 - - [07/Oct/2024 23:49:28] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:49:28,695:INFO:127.0.0.1 - - [07/Oct/2024 23:49:28] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:49:28,713:INFO:127.0.0.1 - - [07/Oct/2024 23:49:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:28,714:INFO:127.0.0.1 - - [07/Oct/2024 23:49:28] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:49:29,668:INFO:127.0.0.1 - - [07/Oct/2024 23:49:29] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:49:29,696:INFO:127.0.0.1 - - [07/Oct/2024 23:49:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:49:29,696:INFO:127.0.0.1 - - [07/Oct/2024 23:49:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:30,216:INFO:127.0.0.1 - - [07/Oct/2024 23:49:30] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:49:30,241:INFO:127.0.0.1 - - [07/Oct/2024 23:49:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:38,158:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:49:38,158:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:49:41,198:INFO:127.0.0.1 - - [07/Oct/2024 23:49:41] "GET / HTTP/1.1" 200 -
+2024-10-07 23:49:41,312:INFO:127.0.0.1 - - [07/Oct/2024 23:49:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:49:41,313:INFO:127.0.0.1 - - [07/Oct/2024 23:49:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:42,752:INFO:127.0.0.1 - - [07/Oct/2024 23:49:42] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:49:42,780:INFO:127.0.0.1 - - [07/Oct/2024 23:49:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:49:42,782:INFO:127.0.0.1 - - [07/Oct/2024 23:49:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:49:44,430:INFO:127.0.0.1 - - [07/Oct/2024 23:49:44] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:49:44,452:INFO:127.0.0.1 - - [07/Oct/2024 23:49:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:49,209:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:50:49,209:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:50:53,457:INFO:127.0.0.1 - - [07/Oct/2024 23:50:53] "GET / HTTP/1.1" 200 -
+2024-10-07 23:50:53,574:INFO:127.0.0.1 - - [07/Oct/2024 23:50:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:53,576:INFO:127.0.0.1 - - [07/Oct/2024 23:50:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:50:54,607:INFO:127.0.0.1 - - [07/Oct/2024 23:50:54] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:50:54,637:INFO:127.0.0.1 - - [07/Oct/2024 23:50:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:54,637:INFO:127.0.0.1 - - [07/Oct/2024 23:50:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:50:55,593:INFO:127.0.0.1 - - [07/Oct/2024 23:50:55] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:50:55,614:INFO:127.0.0.1 - - [07/Oct/2024 23:50:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:57,269:INFO:127.0.0.1 - - [07/Oct/2024 23:50:57] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:50:57,296:INFO:127.0.0.1 - - [07/Oct/2024 23:50:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:57,299:INFO:127.0.0.1 - - [07/Oct/2024 23:50:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:50:58,291:INFO:127.0.0.1 - - [07/Oct/2024 23:50:58] "GET / HTTP/1.1" 200 -
+2024-10-07 23:50:58,319:INFO:127.0.0.1 - - [07/Oct/2024 23:50:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:58,319:INFO:127.0.0.1 - - [07/Oct/2024 23:50:58] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:50:59,437:INFO:127.0.0.1 - - [07/Oct/2024 23:50:59] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:50:59,463:INFO:127.0.0.1 - - [07/Oct/2024 23:50:59] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:50:59,463:INFO:127.0.0.1 - - [07/Oct/2024 23:50:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:50:59,909:INFO:127.0.0.1 - - [07/Oct/2024 23:50:59] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:50:59,935:INFO:127.0.0.1 - - [07/Oct/2024 23:50:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:10,565:ERROR:Login Error: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:51:10,568:INFO:127.0.0.1 - - [07/Oct/2024 23:51:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 23:51:10,575:INFO:127.0.0.1 - - [07/Oct/2024 23:51:10] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:51:10,594:INFO:127.0.0.1 - - [07/Oct/2024 23:51:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:12,431:INFO:127.0.0.1 - - [07/Oct/2024 23:51:12] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:51:12,451:INFO:127.0.0.1 - - [07/Oct/2024 23:51:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:12,452:INFO:127.0.0.1 - - [07/Oct/2024 23:51:12] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:51:17,854:ERROR:Registration Error: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Team(team)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:51:17,855:INFO:127.0.0.1 - - [07/Oct/2024 23:51:17] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-07 23:51:17,862:INFO:127.0.0.1 - - [07/Oct/2024 23:51:17] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:51:17,874:INFO:127.0.0.1 - - [07/Oct/2024 23:51:17] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:51:17,875:INFO:127.0.0.1 - - [07/Oct/2024 23:51:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:19,201:INFO:127.0.0.1 - - [07/Oct/2024 23:51:19] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:51:19,230:INFO:127.0.0.1 - - [07/Oct/2024 23:51:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:25,048:ERROR:Login Error: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Team(team)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:51:25,049:INFO:127.0.0.1 - - [07/Oct/2024 23:51:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 23:51:25,055:INFO:127.0.0.1 - - [07/Oct/2024 23:51:25] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:51:25,070:INFO:127.0.0.1 - - [07/Oct/2024 23:51:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:26,859:INFO:127.0.0.1 - - [07/Oct/2024 23:51:26] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:51:26,882:INFO:127.0.0.1 - - [07/Oct/2024 23:51:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:26,885:INFO:127.0.0.1 - - [07/Oct/2024 23:51:26] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:51:27,831:INFO:127.0.0.1 - - [07/Oct/2024 23:51:27] "GET / HTTP/1.1" 200 -
+2024-10-07 23:51:27,855:INFO:127.0.0.1 - - [07/Oct/2024 23:51:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:27,856:INFO:127.0.0.1 - - [07/Oct/2024 23:51:27] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:51:28,602:INFO:127.0.0.1 - - [07/Oct/2024 23:51:28] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:51:28,627:INFO:127.0.0.1 - - [07/Oct/2024 23:51:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:51:28,630:INFO:127.0.0.1 - - [07/Oct/2024 23:51:28] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:51:29,034:INFO:127.0.0.1 - - [07/Oct/2024 23:51:29] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:51:29,059:INFO:127.0.0.1 - - [07/Oct/2024 23:51:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:32,289:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:53:32,289:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:53:35,888:INFO:127.0.0.1 - - [07/Oct/2024 23:53:35] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:53:35,956:INFO:127.0.0.1 - - [07/Oct/2024 23:53:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:37,088:INFO:127.0.0.1 - - [07/Oct/2024 23:53:37] "GET / HTTP/1.1" 200 -
+2024-10-07 23:53:37,112:INFO:127.0.0.1 - - [07/Oct/2024 23:53:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:37,116:INFO:127.0.0.1 - - [07/Oct/2024 23:53:37] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:53:38,491:INFO:127.0.0.1 - - [07/Oct/2024 23:53:38] "GET / HTTP/1.1" 200 -
+2024-10-07 23:53:38,510:INFO:127.0.0.1 - - [07/Oct/2024 23:53:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:38,511:INFO:127.0.0.1 - - [07/Oct/2024 23:53:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:53:39,047:INFO:127.0.0.1 - - [07/Oct/2024 23:53:39] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:53:39,074:INFO:127.0.0.1 - - [07/Oct/2024 23:53:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:39,075:INFO:127.0.0.1 - - [07/Oct/2024 23:53:39] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:53:39,813:INFO:127.0.0.1 - - [07/Oct/2024 23:53:39] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:53:39,833:INFO:127.0.0.1 - - [07/Oct/2024 23:53:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:47,252:INFO:127.0.0.1 - - [07/Oct/2024 23:53:47] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2024-10-07 23:53:47,261:INFO:127.0.0.1 - - [07/Oct/2024 23:53:47] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:53:47,273:INFO:127.0.0.1 - - [07/Oct/2024 23:53:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:54,403:ERROR:Login Error: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:53:54,405:INFO:127.0.0.1 - - [07/Oct/2024 23:53:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 23:53:54,411:INFO:127.0.0.1 - - [07/Oct/2024 23:53:54] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:53:54,428:INFO:127.0.0.1 - - [07/Oct/2024 23:53:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:55,526:INFO:127.0.0.1 - - [07/Oct/2024 23:53:55] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:53:55,554:INFO:127.0.0.1 - - [07/Oct/2024 23:53:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:53:55,554:INFO:127.0.0.1 - - [07/Oct/2024 23:53:55] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:54:01,983:ERROR:Registration Error: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Team(team)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:54:01,984:INFO:127.0.0.1 - - [07/Oct/2024 23:54:01] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-07 23:54:01,990:INFO:127.0.0.1 - - [07/Oct/2024 23:54:01] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:54:02,000:INFO:127.0.0.1 - - [07/Oct/2024 23:54:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:54:02,001:INFO:127.0.0.1 - - [07/Oct/2024 23:54:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:54:21,855:INFO:127.0.0.1 - - [07/Oct/2024 23:54:21] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:54:21,872:INFO:127.0.0.1 - - [07/Oct/2024 23:54:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:54:21,873:INFO:127.0.0.1 - - [07/Oct/2024 23:54:21] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:54:29,112:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:54:29,112:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:54:30,991:INFO:127.0.0.1 - - [07/Oct/2024 23:54:30] "GET / HTTP/1.1" 200 -
+2024-10-07 23:54:31,099:INFO:127.0.0.1 - - [07/Oct/2024 23:54:31] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:54:31,100:INFO:127.0.0.1 - - [07/Oct/2024 23:54:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:54:31,775:INFO:127.0.0.1 - - [07/Oct/2024 23:54:31] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:54:31,797:INFO:127.0.0.1 - - [07/Oct/2024 23:54:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:54:31,799:INFO:127.0.0.1 - - [07/Oct/2024 23:54:31] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:54:36,688:ERROR:Registration Error: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:54:36,690:INFO:127.0.0.1 - - [07/Oct/2024 23:54:36] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-07 23:54:36,697:INFO:127.0.0.1 - - [07/Oct/2024 23:54:36] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:54:36,716:INFO:127.0.0.1 - - [07/Oct/2024 23:54:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:54:36,718:INFO:127.0.0.1 - - [07/Oct/2024 23:54:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:02,636:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 23:55:02,636:INFO:[33mPress CTRL+C to quit[0m
+2024-10-07 23:55:07,181:INFO:127.0.0.1 - - [07/Oct/2024 23:55:07] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:07,285:INFO:127.0.0.1 - - [07/Oct/2024 23:55:07] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:07,285:INFO:127.0.0.1 - - [07/Oct/2024 23:55:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:09,186:INFO:127.0.0.1 - - [07/Oct/2024 23:55:09] "GET / HTTP/1.1" 200 -
+2024-10-07 23:55:09,216:INFO:127.0.0.1 - - [07/Oct/2024 23:55:09] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:09,217:INFO:127.0.0.1 - - [07/Oct/2024 23:55:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:10,333:INFO:127.0.0.1 - - [07/Oct/2024 23:55:10] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:10,367:INFO:127.0.0.1 - - [07/Oct/2024 23:55:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:10,369:INFO:127.0.0.1 - - [07/Oct/2024 23:55:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:11,171:INFO:127.0.0.1 - - [07/Oct/2024 23:55:11] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:55:11,192:INFO:127.0.0.1 - - [07/Oct/2024 23:55:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:15,537:ERROR:Login Error: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:55:15,541:INFO:127.0.0.1 - - [07/Oct/2024 23:55:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 23:55:15,547:INFO:127.0.0.1 - - [07/Oct/2024 23:55:15] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:55:15,561:INFO:127.0.0.1 - - [07/Oct/2024 23:55:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:16,889:INFO:127.0.0.1 - - [07/Oct/2024 23:55:16] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:16,915:INFO:127.0.0.1 - - [07/Oct/2024 23:55:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:16,917:INFO:127.0.0.1 - - [07/Oct/2024 23:55:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:22,138:ERROR:Registration Error: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Team(team)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Team.members - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-10-07 23:55:22,139:INFO:127.0.0.1 - - [07/Oct/2024 23:55:22] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-07 23:55:22,146:INFO:127.0.0.1 - - [07/Oct/2024 23:55:22] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:22,159:INFO:127.0.0.1 - - [07/Oct/2024 23:55:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:22,160:INFO:127.0.0.1 - - [07/Oct/2024 23:55:22] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:39,460:INFO:127.0.0.1 - - [07/Oct/2024 23:55:39] "GET / HTTP/1.1" 200 -
+2024-10-07 23:55:39,497:INFO:127.0.0.1 - - [07/Oct/2024 23:55:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:39,498:INFO:127.0.0.1 - - [07/Oct/2024 23:55:39] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:40,329:INFO:127.0.0.1 - - [07/Oct/2024 23:55:40] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:40,368:INFO:127.0.0.1 - - [07/Oct/2024 23:55:40] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:40,369:INFO:127.0.0.1 - - [07/Oct/2024 23:55:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:41,373:INFO:127.0.0.1 - - [07/Oct/2024 23:55:41] "GET / HTTP/1.1" 200 -
+2024-10-07 23:55:41,400:INFO:127.0.0.1 - - [07/Oct/2024 23:55:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:41,402:INFO:127.0.0.1 - - [07/Oct/2024 23:55:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:44,445:INFO:127.0.0.1 - - [07/Oct/2024 23:55:44] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:44,464:INFO:127.0.0.1 - - [07/Oct/2024 23:55:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:44,470:INFO:127.0.0.1 - - [07/Oct/2024 23:55:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:45,419:INFO:127.0.0.1 - - [07/Oct/2024 23:55:45] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:55:45,447:INFO:127.0.0.1 - - [07/Oct/2024 23:55:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:48,379:INFO:127.0.0.1 - - [07/Oct/2024 23:55:48] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:55:48,396:INFO:127.0.0.1 - - [07/Oct/2024 23:55:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:52,450:INFO:127.0.0.1 - - [07/Oct/2024 23:55:52] "GET / HTTP/1.1" 200 -
+2024-10-07 23:55:52,474:INFO:127.0.0.1 - - [07/Oct/2024 23:55:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:52,477:INFO:127.0.0.1 - - [07/Oct/2024 23:55:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:55,363:INFO:127.0.0.1 - - [07/Oct/2024 23:55:55] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:55:55,381:INFO:127.0.0.1 - - [07/Oct/2024 23:55:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:55:55,383:INFO:127.0.0.1 - - [07/Oct/2024 23:55:55] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:55:58,865:INFO:127.0.0.1 - - [07/Oct/2024 23:55:58] "GET /login HTTP/1.1" 200 -
+2024-10-07 23:55:58,896:INFO:127.0.0.1 - - [07/Oct/2024 23:55:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:58:58,357:INFO:127.0.0.1 - - [07/Oct/2024 23:58:58] "GET / HTTP/1.1" 200 -
+2024-10-07 23:58:58,382:INFO:127.0.0.1 - - [07/Oct/2024 23:58:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:58:58,385:INFO:127.0.0.1 - - [07/Oct/2024 23:58:58] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-10-07 23:59:04,861:INFO:127.0.0.1 - - [07/Oct/2024 23:59:04] "GET /register HTTP/1.1" 200 -
+2024-10-07 23:59:04,890:INFO:127.0.0.1 - - [07/Oct/2024 23:59:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 23:59:04,890:INFO:127.0.0.1 - - [07/Oct/2024 23:59:04] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Faculty Slots</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="faculty_id">Faculty ID</label>
+        <input type="number" class="form-control" id="faculty_id" name="faculty_id" required>
+    </div>
+    <div class="form-group">
+        <label for="time_slot">Time Slot</label>
+        <input type="text" class="form-control" id="time_slot" name="time_slot" required>
+    </div>
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Slot</button>
+</form>
+
+<h3>Existing Slots</h3>
+<ul>
+    {% for slot in slots %}
+        <li>{{ slot.subject }} - {{ slot.time_slot }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
