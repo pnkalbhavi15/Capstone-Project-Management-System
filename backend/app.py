@@ -2,12 +2,14 @@ from flask import Flask, render_template
 from flask_mysqldb import MySQL
 import os
 from routes import main_routes
-from dotenv import PASSWORD
+from dotenv import load_dotenv
 app = Flask(__name__)
+
+load_dotenv()
 
 app.config['MYSQL_HOST'] = 'localhost'  
 app.config['MYSQL_USER'] = 'root'  
-app.config['MYSQL_PASSWORD'] = PASSWORD
+app.config['MYSQL_PASSWORD'] = 'Pran15tha'
 app.config['MYSQL_DB'] = 'capstone_management' 
 
 mysql = MySQL(app)
