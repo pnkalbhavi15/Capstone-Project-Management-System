@@ -1,27 +1,25 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Slots</title>
+</head>
+<body>
+    <h1>Manage Faculty Slots</h1>
+    <form method="POST">
+        <input type="text" name="faculty_id" placeholder="Faculty ID" required>
+        <input type="text" name="time_slot" placeholder="Time Slot" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <button type="submit">Add Slot</button>
+    </form>
 
-{% block content %}
-<h2>Faculty Slots</h2>
-<form method="POST">
-    <div class="form-group">
-        <label for="faculty_id">Faculty ID</label>
-        <input type="number" class="form-control" id="faculty_id" name="faculty_id" required>
-    </div>
-    <div class="form-group">
-        <label for="time_slot">Time Slot</label>
-        <input type="text" class="form-control" id="time_slot" name="time_slot" required>
-    </div>
-    <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" class="form-control" id="subject" name="subject" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Add Slot</button>
-</form>
+    <h2>Existing Slots:</h2>
+    <ul>
+        {% for slot in slots %}
+            <li>{{ slot[1] }} - {{ slot[2] }} ({{ slot[3] }})</li> <!-- Adjust based on your slot columns -->
+        {% endfor %}
+    </ul>
 
-<h3>Existing Slots</h3>
-<ul>
-    {% for slot in slots %}
-        <li>{{ slot.subject }} - {{ slot.time_slot }}</li>
-    {% endfor %}
-</ul>
-{% endblock %}
+    <p>{{ get_flashed_messages() }}</p>
+</body>
+</html>

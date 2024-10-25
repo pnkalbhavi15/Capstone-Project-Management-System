@@ -47,26 +47,25 @@
             bottom: 0;
             width: 100%;
         }
-        .user-list {
-            list-style: none;
-            padding: 0;
+        .team-status {
+            margin-bottom: 20px;
         }
-        .user-item {
-            background-color: #e9ecef;
-            border-radius: 5px;
-            margin: 10px 0;
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
             padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin-top: 5px;
         }
-        .user-role {
-            font-weight: bold;
+        .existing-teams {
+            margin-top: 20px;
         }
-        .logout-link {
-            float: right;
-            margin-top: -60px;
-            margin-right: 15px;
+        .team-item {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -87,18 +86,52 @@
         </nav>
     </header>
     <main>
-        <h2>Registered Users</h2>
-        {% if users %}
-            <ul class="user-list">
-                {% for user in users %}
-                    <li class="user-item">
-                        <span>{{ user.username }}</span>
-                        <span class="user-role">{{ user.role }}</span>
-                    </li>
-                {% endfor %}
-            </ul>
+        <h2>Welcome, {{ user[1] }}!</h2>
+        
+        <div class="team-status">
+            {% if user_team %}
+                <p>You are part of Team: {{ user_team[1] }}.</p>
+            {% else %}
+                <p>You are not part of any team. Consider joining or creating one!</p>
+            {% endif %}
+        </div>
+
+        {% if user_team %}
+            <h3>Leave Your Team</h3>
+            <form action="{{ url_for('main.leave_team') }}" method="POST">
+                <button type="submit">Leave Team</button>
+            </form>
         {% else %}
-            <p>No registered users found.</p>
+            <h3>Create a New Team</h3>
+            <form method="POST" action="{{ url_for('main.create_team') }}">
+                <div class="form-group">
+                    <label for="team_name">Team Name</label>
+                    <input type="text" id="team_name" name="team_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="members">Add Members (comma-separated user IDs)</label>
+                    <input type="text" id="members" name="members" placeholder="1, 2, 3">
+                </div>
+                <button type="submit">Create Team</button>
+            </form>
+
+            <h3>Join an Existing Team</h3>
+            <div class="existing-teams">
+                {% if available_teams %}
+                    {% for team in available_teams %}
+                        <div class="team-item">
+                            <h4>{{ team[1] }}</h4>
+                            <p>Members: {{ team[2] }}</p>
+                            <form action="{{ url_for('main.join_team') }}" method="POST">
+                                <input type="hidden" name="team_id" value="{{ team[0] }}">
+                                <button type="submit">Join Team</button>
+                            </form>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>No existing teams available to join.</p>
+                {% endif %}
+            </div>
         {% endif %}
     </main>
     <footer>

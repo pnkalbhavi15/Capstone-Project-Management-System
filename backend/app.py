@@ -1,21 +1,23 @@
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
-from models import db
+from flask_mysqldb import MySQL
+import os
 from routes import main_routes
-
+from dotenv import PASSWORD
 app = Flask(__name__)
 
-import os
+app.config['MYSQL_HOST'] = 'localhost'  
+app.config['MYSQL_USER'] = 'root'  
+app.config['MYSQL_PASSWORD'] = PASSWORD
+app.config['MYSQL_DB'] = 'capstone_management' 
+
+mysql = MySQL(app)
+app.register_blueprint(main_routes)
+
 app.secret_key = os.urandom(24)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
-
-db.init_app(app)
-
-with app.app_context():
-    db.create_all()
-
-app.register_blueprint(main_routes)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
