@@ -9,7 +9,7 @@ load_dotenv()
 
 app.config['MYSQL_HOST'] = 'localhost'  
 app.config['MYSQL_USER'] = 'root'  
-app.config['MYSQL_PASSWORD'] = 'Pran15tha'
+app.config['MYSQL_PASSWORD'] = 'PASSWORD'
 app.config['MYSQL_DB'] = 'capstone_management' 
 
 mysql = MySQL(app)
