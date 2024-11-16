@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    {% include 'notifications.html' %}
+    <div class="content">
+        <h2>Welcome, {{ user[1] }}!</h2>
+
+        <div class="team-status">
+            {% if user_team %}
+                <p>You are part of Team: {{ user_team[1] }}.</p>
+                <input type="hidden" id="team-id" value="{{ user_team[0] }}">
+            {% else %}
+                <p>You are not part of any team. Consider joining or creating one!</p>
+            {% endif %}
+        </div>
+
+        {% if user_team %}
+            <h3>Leave Your Team</h3>
+            <form action="{{ url_for('main.leave_team') }}" method="POST" onsubmit="return confirm('Are you sure you want to leave your team?');">
+                <button type="submit">Leave Team</button>
+            </form>
+        
+            <h3>Mentoring</h3>
+            <button id="send-mentoring-request">Send Mentoring Request</button>
+            <div id="faculty-list" style="display:none;">
+                <h4>Select Faculty:</h4>
+                <ul id="faculty-names"></ul>
+            </div>
+
+            <div id="file-upload" style="display:none;">
+                <h4>Upload Your Resume:</h4>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+    
+        {% else %}
+            <h3>Create a New Team</h3>
+            <form id="create-team-form" method="POST" action="{{ url_for('main.create_team') }}">
+                <div class="form-group">
+                    <label for="team_name">Team Name</label>
+                    <input type="text" id="team_name" name="team_name" required>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="members">Add Members (comma-separated user IDs)</label>
+                    <input type="text" id="members" name="members" placeholder="userID1, userID2, ...">
+                </div> -->
+                <button type="submit">Create Team</button>
+            </form>
+
+            <h3>Join an Existing Team</h3>
+            <div class="existing-teams">
+                {% if available_teams %}
+                    {% for team in available_teams %}
+                        <div class="team-item">
+                            <h4>{{ team[1] }}</h4>
+                            <p>Members: {{ team[2] }}</p>
+                            <form class="join-team-form" action="{{ url_for('main.join_team') }}" method="POST">
+                                <input type="hidden" name="team_id" value="{{ team[0] }}">
+                                <button type="submit">Join Team</button>
+                            </form>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>No existing teams available to join.</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</main>
+
+<script>
+
+document.getElementById('send-mentoring-request').addEventListener('click', function() {
+    fetch('/get_faculty')  // Create this route in your Flask app
+        .then(response => response.json())
+        .then(data => {
+            const facultyList = document.getElementById('faculty-names');
+            facultyList.innerHTML = '';  // Clear previous entries
+            data.forEach(faculty => {
+                const listItem = document.createElement('li');
+                listItem.textContent = faculty.username;  // Assuming faculty has 'username' field
+                listItem.addEventListener('click', function() {
+                    sendMentoringRequest(faculty.id);  // Call the function to send request
+                });
+                facultyList.appendChild(listItem);
+            });
+            
+            document.getElementById('faculty-list').style.display = 'block';  // Show the list
+            document.getElementById('file-upload').style.display = 'block';  
+        });
+});
+
+function sendMentoringRequest(facultyId) {
+    const requestDetails = prompt("Please provide details for your request:");
+    const teamIdElement = document.getElementById('team-id');  // Assuming you have an input field for team ID
+    
+    if (!teamIdElement) {
+        alert("Team ID element is not found. Please make sure you are part of a team.");
+        return;
+    }
+
+    const teamId = teamIdElement.value;
+
+    if (requestDetails && teamId) {
+        const resumeFile = document.getElementById('resume').files[0]; // Get the uploaded file
+        
+        if (!resumeFile) {
+            alert("Please select a resume file to upload.");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('faculty_id', facultyId);
+        formData.append('request_details', requestDetails);
+        formData.append('team_id', teamId);
+        formData.append('resume', resumeFile); // Append the file to the form data
+
+        fetch('/request_mentoring', {
+            method: 'POST',
+            body: formData, // Send the form data
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Mentoring request sent successfully!");
+                document.getElementById('faculty-list').style.display = 'none';  // Hide the list
+                document.getElementById('file-upload').style.display = 'none'; 
+            } else {
+                alert("Error: " + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("An error occurred while submitting your mentoring request.");
+        });
+    } else {
+        alert("Please provide both request details and select a team.");
+    }
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<div class="notification-section">
+    <h3>Notifications</h3>
+    {% if notifications %}
+        <ul class="notification-list">
+            {% for notification in notifications %}
+                <li class="{% if notification.is_read %}read{% else %}unread{% endif %}">
+                    <p>{{ notification.message }}</p>
+                    <form action="{{ url_for('main_routes.mark_notification_read', notification_id=notification.id) }}" method="post">
+                        <button type="submit">Mark as Read</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No notifications.</p>
+    {% endif %}
+</div>
+<script>
+document.querySelectorAll('.mark-as-read').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        const notificationId = this.dataset.id;
+        fetch(`/mark_notification_read/${notificationId}`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'}
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                this.closest('li').classList.add('read');
+            } else {
+                alert(data.error || 'Error marking notification as read');
+            }
+        });
+    });
+});
+</script>
