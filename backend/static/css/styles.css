@@ -1,43 +1,242 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text color for contrast */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+#sidebar {
+    background-color: #3c62ad; /* Blue sidebar */
+    color: white;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially off-screen */
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    padding-top: 20px;
+    padding-left: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    transform: translateX(-250px); /* Start off-screen */
+}
+
+#sidebar.active {
+    left: 0; /* Slide in the sidebar */
+    transform: translateX(0); /* Slide in */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it’s above content */
+    display: inline-block;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
 }
 
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #3c62ad; /* Blue header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header .header-left h1 {
+    font-size: 24px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+/* Profile Icon Style */
+/* Profile Icon and Dropdown Styles */
+.profile-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative; /* Make the parent relative for positioning the dropdown */
 }
 
-nav ul li a {
-    color: #fff;
+.profile-icon {
+    font-size: 40px; /* Adjust the size of the icon */
+    color: #ebe4e4; /* Icon color */
+    margin-right: 10px;
+    background-color: #3c62ad;
+    border-radius: 50%; /* Make it circular */
+    padding: 8px; /* Adjust padding for balance */
+    transition: background-color 0.3s ease;
+}
+
+.profile-info:hover .profile-icon {
+    background-color: #2b2092; /* Hover effect for profile icon */
+}
+
+.profile-info p, a {
+    font-size: 14px;
+    color: #3c62ad;
+    margin: 5px 0; /* Spacing between links */
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px; /* Positioning below the profile icon */
+    right: 0;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 200px; /* Set a width for the dropdown */
+    padding: 10px 15px;
+    opacity: 0;
+    visibility: hidden; /* Hide by default */
+    transform: translateY(10px); /* Initial position for animation */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /* Animation */
+}
+
+/* When the dropdown is shown */
+.profile-dropdown.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Smooth slide-up animation */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Dropdown Item Styles */
+.profile-dropdown a {
+    display: block;
+    color: #333;
     text-decoration: none;
+    font-size: 14px;
+    padding: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
 }
 
-main {
-    padding: 20px;
+.profile-dropdown a:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+    color: #3c62ad; /* Change text color on hover */
 }
+
+/* Optional: Add spacing and minor padding adjustments for the dropdown */
+.profile-dropdown p {
+    font-size: 12px;
+    color: #999; /* Subtle text for user details */
+    margin-bottom: 8px;
+}
+
 
 footer {
+    background-color: #3c62ad; /* Blue footer */
+    color: white;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
-    background: #007bff;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Close Button for Sidebar */
+#closeSidebar {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#closeSidebar:hover {
+    color: #ffcc00; /* Optional: Change color on hover */
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        left: -250px; /* Reset the sidebar position on mobile */
+        transition: left 0.3s ease-in-out;
+    }
+
+    .menu-toggle {
+        font-size: 30px; /* Adjust toggle size for mobile */
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    #sidebar.active {
+        left: 0; /* Slide in on mobile */
+    }
+
+    #sidebar ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #sidebar.active ul {
+        display: flex;
+    }
+}
+
+/* Notifications Section */
+.notification-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e6f7e6; /* Very light green background */
+    border: 1px solid #b2d8b2; /* Subtle green border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.notification-section h3 {
+    font-size:10 px;
+    color: #4cb159; /* Blue header color */
+    margin-bottom: 10px;
+}
+
+.notification-box {
+    font-size: 16px;
+    color: #333; /* Dark text color for contrast */
+}
+
+/* No Notifications Message */
+.notification-box.no-notifications {
+    color: #666; /* Subtle grey text */
+    font-style: italic;
 }

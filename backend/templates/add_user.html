@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Add New User</h2>
+    <form id="addUserForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+        </select>
+        
+        <button type="submit">Add User</button>
+    </form>
+
+    <script>
+        document.getElementById('addUserForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const role = document.getElementById('role').value;
+
+            fetch('/admin/add_user', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password,
+                    role: role
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                window.location.href = '/admin_dashboard';  // Redirect back to the dashboard
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+{% endblock %}

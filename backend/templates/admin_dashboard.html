@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="admin-dashboard">
+    <h2>Admin Dashboard</h2>
+
+    <div class="admin-actions">
+        <h3>Manage Users</h3>
+        <div class="user-management">
+            <button onclick="window.location.href='/admin/add_user'">Add New User</button>
+        </div>
+    </div>
+
+    <div class="search-filter">
+        <form method="get" action="/admin_dashboard">
+            <input type="text" name="search" placeholder="Search by Username or Role" value="{{ search_query }}">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="user-list">
+        <h3>Users List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+                    <td>
+                        <button class="view-btn" data-user-id="{{ user[0] }}">View</button>
+                        <button class="edit-btn" data-user-id="{{ user[0] }}">Edit</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <a href="?page={{ current_page - 1 }}&search={{ search_query }}" {% if current_page == 1 %}class="disabled"{% endif %}>Previous</a>
+        {% for page in range(1, (total_users // users_per_page) + 2) %}
+            <a href="?page={{ page }}&search={{ search_query }}" {% if page == current_page %}class="active"{% endif %}>{{ page }}</a>
+        {% endfor %}
+        <a href="?page={{ current_page + 1 }}&search={{ search_query }}" {% if current_page * users_per_page >= total_users %}class="disabled"{% endif %}>Next</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const viewButtons = document.querySelectorAll('.view-btn');
+        viewButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const userId = button.getAttribute('data-user-id');
+                viewUser(userId);
+            });
+        });
+
+        const editButtons = document.querySelectorAll('.edit-btn');
+        editButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const userId = button.getAttribute('data-user-id');
+                editUser(userId);
+            });
+        });
+    });
+
+    function viewUser(userId) {
+        window.location.href = '/admin/view_user/' + userId;
+    }
+
+    function editUser(userId) {
+        window.location.href = '/admin/edit_user/' + userId;
+    }
+</script>
+{% endblock %}

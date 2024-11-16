@@ -2,14 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request Mentoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Request Mentoring</h1>
-    <form method="POST">
-        <textarea name="mentoringDetails" placeholder="Details of your mentoring request" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-    <p>{{ get_flashed_messages() }}</p>
+    <header>
+        <h1>Request Mentoring</h1>
+    </header>
+    <main>
+        <form method="POST" action="{{ url_for('main.request_mentoring') }}" enctype="multipart/form-data">
+            <label for="request_details">Request Details:</label>
+            <textarea id="request_details" name="request_details" placeholder="Please provide details for your request" required></textarea>
+            
+            <label for="resume">Upload Resume (PDF only):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+            
+            <button type="submit">Submit Request</button>
+        </form>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </main>
+    <footer>
+        <p>&copy; 2024 PESU Academy. All rights reserved.</p>
+    </footer>
 </body>
 </html>

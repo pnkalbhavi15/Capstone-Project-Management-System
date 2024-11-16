@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Faculty Dashboard</h1>
+<p>Welcome, {{ session.get('username') }}! Here you can access your faculty-specific features.</p>
+
+<h3>Accepted Requests: {{ accepted_count }} / 5</h3> 
+
+<h3>Mentoring Requests</h3>
+<ul>
+    {% if requests %}
+        {% for request in requests %}
+            <li>
+                <strong>Team:</strong> {{ request[3] }}<br>  <!-- team_name -->
+                <strong>Team Members:</strong> {{ request[6] }}<br>  <!-- team_members -->
+                <strong>Requested by:</strong> {{ request[1] }}<br>  <!-- username -->
+                <strong>Details:</strong> {{ request[2] }}<br>  <!-- details -->
+                <strong>Status:</strong> {{ request[5] }}<br>  <!-- request_status -->
+                {% if request[4] %}  <!-- resume_file -->
+                    <strong>Resume:</strong> <a href="{{ url_for('main.download_pdf', request_id=request[0]) }}">Download</a>  <!-- id -->
+                {% else %}
+                    <strong>Resume:</strong> Not uploaded
+                {% endif %}
+                <form action="{{ url_for('main.respond_to_request', request_id=request[0]) }}" method="POST">
+                    <input type="hidden" name="request_id" value="{{ request[0] }}">
+                    <button type="submit" name="response" value="accept">Accept</button>
+                    <button type="submit" name="response" value="reject">Reject</button>
+                </form>
+            </li>
+        {% endfor %}
+    {% else %}
+        <p>No mentoring requests at the moment.</p>
+    {% endif %}
+</ul>
+{% endblock %}

@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Container for login and info */
+.login-container {
+    display: flex;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: white;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Left Half: PES Logo and Login Form */
+.left-half {
+    flex: 1; /* Take up equal space */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px; /* Add some padding for the content */
+    color: #333;
+}
+
+.left-half h1{
+    color: rgb(78, 77, 85);
+    font-size: larger;
+
+}
+.pes-logo {
+    width: 180px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+h1 {
+    font-size: 3rem; /* Increase font size */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+form input {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 280px; /* Adjust width to be larger */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #1E3A6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 280px; /* Adjust width */
+}
+
+form button:hover {
+    background-color: #2a4b7c;
+}
+
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+    color: red;
+}
+
+.flash-messages li {
+    margin-top: 10px;
+}
+
+/* Right Half: Additional Information Section */
+.right-half {
+    flex: 1; /* Take up equal space */
+    background-color: #1E3A6B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    color: white;
+}
+
+.info-box {
+    background-color: white;
+    color: #1E3A6B;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px; /* Adjust width to match input boxes */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-header i {
+    font-size: 1.5rem; /* Larger icon size */
+    margin-right: 15px;
+    color: #1E3A6B;
+}
+
+.info-header h3 {
+    font-size: 1.2rem; /* Slightly larger text */
+    margin: 0;
+    font-weight: normal;
+}
+
+.info-box p {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: normal;
+}
+/* Remove margin from PES logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Adjusted to minimize white space below */
+}
+
+.pes-logo {
+    width: 180px;
+}
+
+/* Styling for the OR divider */
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin: 20px 0;
+    position: relative;
+}
+
+.or-divider span {
+    background-color: white;
+    padding: 0 10px;
+}
+
+.or-divider:before,
+.or-divider:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Google sign-in button */
+.google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+    margin: 10px auto; /* Center align */
+}
+
+.google-signin i {
+    margin-right: 10px;
+}
+
+/* Hover effect for Google button */
+.google-signin:hover {
+    background-color: #c53727;
+}
+
+/* Forgot password link */
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #1E3A6B;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Style adjustments for main button and inputs */
+form input {
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #1E3A6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 280px;
+}
+
+form button:hover {
+    background-color: #2a4b7c;
+}

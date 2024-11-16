@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Student Dashboard</h1>
+<p>Welcome, {{ session.get('username') }}! Here you can access your student-specific features.</p>
+<ul>
+    <li><a href="/request_mentoring">Request Mentoring</a></li>
+    <li><a href="/upload_resume">Upload Resume</a></li>
+    <li><a href="/view_notifications">View Notifications</a></li>
+</ul>
+<form action="{{ url_for('main.request_mentoring') }}" method="post">
+    <label for="mentor_name">Mentor Name:</label>
+    <input type="text" id="mentor_name" name="mentor_name" required>
+    
+    <label for="request_details">Request Details:</label>
+    <textarea id="request_details" name="request_details" required></textarea>
+    
+    <button type="submit">Submit Request</button>
+</form>
+
+{% endblock %}

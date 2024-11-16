@@ -25,9 +25,20 @@
     <main>
         <form action="{{ url_for('main.upload_resume') }}" method="POST" enctype="multipart/form-data">
             <label for="resume">Select Resume:</label>
-            <input type="file" id="resume" name="resume" required>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+            <p>Please upload your resume in PDF or Word format. Max size: 2MB.</p>
             <input type="submit" value="Upload Resume">
         </form>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
     </main>
     <footer>
         <p>&copy; 2024 PESU Academy. All rights reserved.</p>
